@@ -157,6 +157,7 @@ header a:hover {
   justify-items: center;
   gap: 34px;
   margin-top: 57px;
+  margin-bottom: 20px;
 }
 
 .van-tile a {
