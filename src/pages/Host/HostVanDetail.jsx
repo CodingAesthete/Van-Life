@@ -5,7 +5,7 @@ export default function HostVanDetail() {
   const { id } = useParams()
   const [currentVan, setCurrentVan] = React.useState(null)
 
-  React.useEffect(() => {
+  React.useEffect((id) => {
     fetch(`/api/host/vans/${id}`)
       .then(res => res.json())
       .then(data => setCurrentVan(data.vans))
@@ -19,7 +19,7 @@ export default function HostVanDetail() {
     <section>
       <div className="host-van-detail-layout-container">
         <div className="host-van-detail">
-          <img src={currentVan.imageUrl} />
+          <img src={currentVan.imageUrl} alt="" />
           <div className="host-van-detail-info-text">
             <i
               className={`van-type van-type-${currentVan.type}`}
