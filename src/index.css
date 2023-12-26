@@ -66,6 +66,7 @@ footer {
   align-items: center;
   margin-top: auto;
   font-weight: 500;
+  bottom: 0;
 }
 
 .link-button {
@@ -182,7 +183,8 @@ footer {
 
 /*** VAN PAGES ***/
 .van-list-container {
-  padding-inline: 23px
+  padding-inline: 23px;
+  margin-bottom: 2rem;
 }
 
 .van-list {
