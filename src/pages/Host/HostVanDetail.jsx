@@ -5,7 +5,7 @@ export default function HostVanDetail() {
   const { id } = useParams()
   const [currentVan, setCurrentVan] = React.useState(null)
 
-  React.useEffect((id) => {
+  React.useEffect(() => {
     fetch(`/api/host/vans/${id}`)
       .then(res => res.json())
       .then(data => setCurrentVan(data.vans))
