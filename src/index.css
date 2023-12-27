@@ -183,7 +183,8 @@ footer {
 
 /*** VAN PAGES ***/
 .van-list-container {
-  padding-inline: 23px
+  padding-inline: 23px;
+  margin-bottom: 2rem;
 }
 
 .van-list {
