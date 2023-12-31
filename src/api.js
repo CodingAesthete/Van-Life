@@ -2,7 +2,7 @@ export async function getVans(id) {
   const url = id ? `/api/vans/${id}` : "/api/vans"
   const res = await fetch(url)
   if (!res.ok) {
-    // eslint-disable-next-line no-throw-literal
+    // eslint-disable-next-line
     throw {
       message: "Failed to fetch vans",
       statusText: res.statusText,
@@ -17,7 +17,7 @@ export async function getHostVans(id) {
   const url = id ? `/api/host/vans/${id}` : "/api/host/vans"
   const res = await fetch(url)
   if (!res.ok) {
-    // eslint-disable-next-line no-throw-literal
+    // eslint-disable-next-line
     throw {
       message: "Failed to fetch vans",
       statusText: res.statusText,
