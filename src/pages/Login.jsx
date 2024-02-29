@@ -38,7 +38,6 @@ export default function Login() {
   // Function to set login status after successful login
   const setLoggedInStatus = () => {
     localStorage.setItem("loggedin", true); // Set login status
-    window.location.reload(); // Reload the page
   };
 
   useEffect(() => {
