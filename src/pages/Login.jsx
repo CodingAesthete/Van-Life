@@ -20,7 +20,7 @@ export async function action({ request }) {
     .searchParams.get("redirectTo") || "/host";
 
   try {
-    const data = await loginUser({ email, password });
+    await loginUser({ email, password });
     localStorage.setItem("loggedin", true); // Set login status
     const response = redirect(pathname);
     response.body = true;
